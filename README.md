@@ -1,31 +1,37 @@
-## !! Please update this README.md file for online Repo submission !!
-You can edit your `README.md` within Github's online editor, it also has an preview button!  
-Check the [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for markdown syntaxes, it's super easy!  
+![alt text](https://img.xda-cdn.com/OLHiEbUrdw3dubfNvbsREexS_B0=/http%3A%2F%2Fi.imgur.com%2F43oeyzg.png "Sony Apps Enabler")
+ 
+``` 
+I am not responsible for bricked devices, corrupt sdcards,
+thermonuclear war, or you getting fired because the alarm app failed. 
+Please do some research if you have any concerns about features 
+included in this mod before flashing it! YOU are choosing to make 
+these modifications, and if you point the finger at me for messing up 
+your device, I will laugh at you.
+```
 
-## How to Create a Magisk Module
-1. Clone / download this repo
-2. Open `config.sh`, follow the instructions written at the beginning of the file. You should at least change `config.sh` and `module.prop`
-3. Zip your files, the zipped file is a flashable zip for both Magisk Manager and custom recoveries
-4. Please check **Notes** for precautions
+### Background:
+Made by Zenith, Sony Apps Enabler is a ported version of Sony devices' framework files for any Android device. This tricks Play Store into recognizing your Android as a Sony device and therefore, allowing you to install and update Sony devices specific apps directly from Play Store. 
+For more info, please check the [original thread here.](https://forum.xda-developers.com/android/software-hacking/mod-sony-apps-enabler-install-sony-apps-t3590477)
 
-## How to Request a New Repo
-1. Fork [this repo](https://github.com/topjohnwu/magisk-module-template)
-2. Create your own Magisk Module as stated above
-3. Push your changes to Github
-4. Change the description of the Github repo to **the id of your module. This is important! Never change it to anything else!**
-5. Open an issue in [topjohnwu/Magisk_Repo_Central](https://github.com/topjohnwu/Magisk_Repo_Central/issues/new)  
-   Please include your repo link so I can check and clone it
-6. Your repo should be cloned into [Magisk-Modules-Repo](https://github.com/Magisk-Modules-Repo), and you should receive an email to become the collaborator of that repo so you can edit it in the future.
+**By using this module, you're able to use the following Sony apps:**
+   * Music
+   * Album
+   * Xperia Keyboard
+   * Calendar
+   * Weather
+   * Sketch
+   * Other apps by Sony Mobile Communications
 
-## Notes
-- Module Template v4 is **NOT** backwards compatibile with any Magisk version lower than v13.1!
-- (Windows aware!!) This git repo is configured to force Unix endlines on all necessary files. The line endings on these files should remain the Unix format. Please use advanced text editors like Sublime, Atom, Notepad++ etc. to edit the text files
-- In `module.prop`, `version` is any string you like, so any fancy version name (e.g. ultra-beta-v0.0.0.1) is allowed. However, `versionCode` **MUST** be an integer. The value is used for version comparison.
-- Make sure your module ID **doesn't contain any spaces**.
-- (For repo developers) Magisk Manager monitors all repo's `master` branch. So any changes to the branch `master` will be reflected to all users immediately. If you are working on an update for a module, please work on another branch, make sure it works, and then merge the changes back to `master`.
+### Installation:
 
-## Best Practice for Updating a Repo
-1. Open a new branch, and start update your files on the new branch
-2. Test if everything works fine
-3. Bump up the `versionCode` in `module.prop`, or Magisk Manager won't know that your module is updated!
-4. Merge the changes back to master, all users shall now receive the update in Magisk Manager
+1. Download and flash the Sony Apps Enabler file through TWRP or Magisk Manager.
+2. Reboot.
+3. Clear Play Store's data.
+4. Open Play Store and install your preferred Sony apps.
+
+### Credits:
+   * Sony for providing the apps.
+   * [A.R.I.S.E. Sound Systems](https://forum.xda-developers.com/android/software/r-s-e-sound-systems-auditory-research-t3379709) and [XOSP Community](https://xosp.org/)for essential files.
+   * darjwx, shavendum, Araib93, flash- and TechnoSparks for assisting Zenith.
+   * Zenith for originally creating this package.
+   * topjohnwu for creating Magisk.
