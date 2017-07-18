@@ -1,7 +1,7 @@
-id=template
-name=Template Module
-version=v1
+id=SonyApps
+name=Sony Apps Enabler 
+version=3.0.1
 versionCode=1
-author=topjohnwu
-description=A short description
+author=Zenith (Magisk by matpower64)
+description=Sony Apps Enabler is a ported version of Sony devices' framework files for any Android device. This tricks Play Store into recognizing your Android as a Sony device and therefore, allowing you to install and update Sony devices specific apps directly from Play Store.
 template=4
